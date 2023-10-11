@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <!-- Spacer Start-->
+  <div class="container-fluid">
+  <!-- Spacer Start-->
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col" style="height: 13vh;">
+      </div>
+    </div>
+    <!-- Spacer End -->
+  
+    <div class="row">
+      <div class="col headabout">
+        <h2 class="heading2"><b>Festival Puja Details</b></h2>
+      </div>
+    </div>
+    <!-- Spacer Start-->
+    <div class="row">
+      <div class="col" style="height: 4vh;">
+      </div>
+    </div>
+    <!-- Spacer End -->
+  
+    <h1>{{ festival_puja_d.title }} {{ festival_puja_d.description }}</h1>
+    
+    <p>Phone: {{ festival_puja_d.price }}</p>
+    
+    
+    </ul>
+
+</div>
+
+
+{% endblock %}
