@@ -1,0 +1,10 @@
+from django.db import models
+
+# Create your models here.
+class Typesofpuja(models.Model):
+    title = models.CharField(max_length=200, null=True)
+    description = models.CharField(max_length=2500, null=True)
+    price = models.CharField(max_length=191, null=True)
+
+    def __str__(self): #this is to show the name in the admin panel, you will understand in the next tutorial
+        return self.title #even if you dont write this function, you will not face any issues 
